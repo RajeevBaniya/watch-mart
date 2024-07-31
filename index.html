@@ -1,851 +1,886 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online watch Store Website Design</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
 
-</head>
-<body>
-
-<!-- header section starts -->
-
-<header class="header">
-
-    <div class="header-1">
-
+    <header class="header">
+      <div class="header-1">
         <a href="#" class="logo"> <i class="fas fa-clock"></i>watch mart</a>
 
         <form action="" class="search-form">
-            <input type="search" name="" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
         </form>
 
         <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <div id="login-btn" class="fas fa-user"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
         </div>
-
-    </div>
-
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#featured">featured</a>
-            <a href="#arrivals">arrivals</a>
-            <a href="#reviews">reviews</a>
-            <a href="#blogs">blogs</a>
-        </nav>
-    </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- bottom navbar -->
-
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#featured" class="fas fa-list"></a>
-    <a href="#arrivals" class="fas fa-tags"></a>
-    <a href="#reviews" class="fas fa-comments"></a>
-    <a href="#blogs" class="fas fa-blog"></a>
-</nav>
-
-<!-- login-form -->
-
-<div class="login-form-container">
-
-    <div id="close-login-btn" class="fas fa-times"></div>
-
-    <form action="">
-        <h3>sign in</h3>
-        <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
-        <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
-        <div class="checkbox">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">remember me</label>
-        </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>forget password ? <a href="#">click here</a></p>
-        <p>don't hava an account ? <a href="#">create one</a></p>
-    </form>
-
-</div>
-
-<!-- home sectio starts -->
-
-<section class="home" id="home">
-
-    <div class="row">
-
-        <div class="content">
-            <h3></h3>
-            <p>Find a watch that expresses your style. There is a watch for everyone with a selection that includes both timelessly 
-            beautiful classics and stunning modern designs.</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
-
-      <div class="swiper watch-slider">
-       <div class="swiper-wrapper">
-        <a href="#" class="swiper-slide"><img src="image/watch-1.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-2.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-3.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-4.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-5.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-6.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-7.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-8.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-9.png" alt=""></a>
-        <a href="#" class="swiper-slide"><img src="image/watch-10.png" alt=""></a>
-       </div>
-       <img src="image/stand.png" class="stand" alt="">
       </div>
 
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#featured">featured</a>
+          <a href="#arrivals">arrivals</a>
+          <a href="#reviews">reviews</a>
+          <a href="#blogs">blogs</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featured" class="fas fa-list"></a>
+      <a href="#arrivals" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login-form -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="enter your email"
+          id=""
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't hava an account ? <a href="#">create one</a></p>
+      </form>
     </div>
 
-</section>
+    <!-- home sectio starts -->
 
-<!-- home section ends -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Find a watch that expresses your style. There is a watch for
+            everyone with a selection that includes both timelessly beautiful
+            classics and stunning modern designs.
+          </p>
+          <a href="#" class="btn">shop now</a>
+        </div>
 
-<!-- icons section starts -->
+        <div class="swiper watch-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-1.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-2.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-3.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-4.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-5.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-6.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-7.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-8.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-9.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/watch-10.png" alt=""
+            /></a>
+          </div>
+          <img src="image/stand.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
 
-<section class="icons-container">
+    <!-- home section ends -->
 
-    <div class="icons">
+    <!-- icons section starts -->
+
+    <section class="icons-container">
+      <div class="icons">
         <i class="fas fa-plane"></i>
         <div class="content">
-            <h3>free shipping</h3>
-            <p>order over Rs.15000</p>
+          <h3>free shipping</h3>
+          <p>order over Rs.15000</p>
         </div>
-    </div>
+      </div>
 
-    <div class="icons">
+      <div class="icons">
         <i class="fas fa-lock"></i>
         <div class="content">
-            <h3>secure payment</h3>
-            <p>100% secure payment</p>
+          <h3>secure payment</h3>
+          <p>100% secure payment</p>
         </div>
-    </div>
+      </div>
 
-    <div class="icons">
+      <div class="icons">
         <i class="fas fa-redo-alt"></i>
         <div class="content">
-            <h3>easy returns</h3>
-            <p>10 days returns</p>
+          <h3>easy returns</h3>
+          <p>10 days returns</p>
         </div>
-    </div>
+      </div>
 
-    <div class="icons">
+      <div class="icons">
         <i class="fas fa-headset"></i>
         <div class="content">
-            <h3>24/7 support </h3>
-            <p>call us anytime</p>
+          <h3>24/7 support</h3>
+          <p>call us anytime</p>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
+    <!-- icons section ends -->
 
-<!-- icons section ends -->
+    <!-- featured section starts-->
 
-<!-- featured section starts-->
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>featured watches</span></h1>
 
-<section class="featured" id="featured">
-
-    <h1 class="heading"> <span>featured watches</span> </h1>
-
-    <div class="swiper featured-slider">
-
+      <div class="swiper featured-slider">
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 1000.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="image">
+              <img src="image/watch-1.png" alt="" />
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 1000.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="image">
+              <img src="image/watch-2.png" alt="" />
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-8.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="image">
+              <img src="image/watch-3.png" alt="" />
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/watch-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>featured watch</h3>
-                    <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
-                    <a href="#" class="btn">add to a cart</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
             </div>
+            <div class="image">
+              <img src="image/watch-4.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
 
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-6.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-7.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-8.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-9.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/watch-10.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>featured watch</h3>
+              <div class="price">Rs 899.00 <span>Rs 1250.00</span></div>
+              <a href="#" class="btn">add to a cart</a>
+            </div>
+          </div>
         </div>
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+      </div>
+    </section>
 
-    </div>
+    <!-- featured section ends-->
 
-</section>
+    <!-- newsletter section starts-->
 
-<!-- featured section ends-->
-
-<!-- newsletter section starts-->
-
-<section class="newsletter">
-
-    <form action="">
+    <section class="newsletter">
+      <form action="">
         <h3>subscribes for latest updates</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
-        <input type="submit" value="subscribe" class="btn">
-    </form>    
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input type="submit" value="subscribe" class="btn" />
+      </form>
+    </section>
 
-</section>
+    <!-- newsletter section ends-->
 
-<!-- newsletter section ends-->
+    <!-- arrivals section starts-->
 
-<!-- arrivals section starts-->
+    <section class="arrivals" id="arrivals">
+      <h1 class="heading"><span>new arrivals</span></h1>
 
-<section class="arrivals" id="arrivals">
-
-    <h1 class="heading"> <span>new arrivals</span> </h1>
-
-    <div class="swiper arrivals-slider">
-        
+      <div class="swiper arrivals-slider">
         <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-4.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
 
-    </div>
-
-
-    <div class="swiper arrivals-slider">
-        
+      <div class="swiper arrivals-slider">
         <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-6.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-7.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-8.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-8.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-9.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/watch-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/watch-10.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>new arrivals</h3>
+              <div class="price">Rs 1500.00 <span>Rs 2000.00</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- arrivals section ends -->
 
-</section>
+    <!-- deal section starts -->
 
-<!-- arrivals section ends -->
-
-<!-- deal section starts -->
-
-<section class="deal">
-
-    <div class="content">
+    <section class="deal">
+      <div class="content">
         <h3></h3>
         <h1></h1>
-        <p>Find a watch that expresses your style. There is a watch for everyone with a selection that includes both timelessly
-         beautiful classics and stunning modern designs.</p>
-         <a href="#" class="btn">shop now</a>
-    </div>
+        <p>
+          Find a watch that expresses your style. There is a watch for everyone
+          with a selection that includes both timelessly beautiful classics and
+          stunning modern designs.
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
 
-    <div class="image">
-        <img src="image/deal-image copy.png" alt="">
-    </div>
+      <div class="image">
+        <img src="image/deal-image copy.png" alt="" />
+      </div>
+    </section>
 
-</section>
+    <!-- deal section ends -->
 
-<!-- deal section ends -->
+    <!-- reviews section starts -->
 
-<!-- reviews section starts -->
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>client's reviews</span></h1>
 
-<section class="reviews" id="reviews">
-
-    <h1 class="heading"> <span>client's reviews</span> </h1>
-
-    <div class="swiper reviews-slider">
-
+      <div class="swiper reviews-slider">
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/pic-1.jpg" alt="">
-                <h3>Raj Ksdh</h3>
-                <p>The watch has a classic and timeless design that goes well with both formal and casual.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-1.jpg" alt="" />
+            <h3>Raj Ksdh</h3>
+            <p>
+              The watch has a classic and timeless design that goes well with
+              both formal and casual.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-2.jpg" alt="">
-                <h3>ck don</h3>
-                <p>The stainless steel case feels solid and well-built.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-2.jpg" alt="" />
+            <h3>ck don</h3>
+            <p>The stainless steel case feels solid and well-built.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-3.jpg" alt="">
-                <h3>Nitesh</h3>
-                <p>The leather strap feels soft against the skin and doesn't cause any discomfort.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-3.jpg" alt="" />
+            <h3>Nitesh</h3>
+            <p>
+              The leather strap feels soft against the skin and doesn't cause
+              any discomfort.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-4.jpg" alt="">
-                <h3>Ramu</h3>
-                <p>I've worn this watch daily for months, and it still looks as good as the day I got it.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-4.jpg" alt="" />
+            <h3>Ramu</h3>
+            <p>
+              I've worn this watch daily for months, and it still looks as good
+              as the day I got it.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-5.jpg" alt="">
-                <h3>Manish</h3>
-                <p>I would definitely recommend everyone to buy watch from here who are  seeking style & quality.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-5.jpg" alt="" />
+            <h3>Manish</h3>
+            <p>
+              I would definitely recommend everyone to buy watch from here who
+              are seeking style & quality.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-6.jpg" alt="">
-                <h3>Sulabh</h3>
-                <p>I've owned watches from here before, and they've always been reliable and well-made.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-6.jpg" alt="" />
+            <h3>Sulabh</h3>
+            <p>
+              I've owned watches from here before, and they've always been
+              reliable and well-made.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-7.jpg" alt="">
-                <h3>Rajan</h3>
-                <p>Although u may see pricey but the build quality justifies the cost. You're getting what you pay for..</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-7.jpg" alt="" />
+            <h3>Rajan</h3>
+            <p>
+              Although u may see pricey but the build quality justifies the
+              cost. You're getting what you pay for..
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <img src="image/pic-8.jpg" alt="">
-                <h3>Sudan</h3>
-                <p>The packaging feels premium and makes it a great option for gifting.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-8.jpg" alt="" />
+            <h3>Sudan</h3>
+            <p>
+              The packaging feels premium and makes it a great option for
+              gifting.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- reviews section ends -->
 
-</section>
+    <!-- blogs section starts -->
 
-<!-- reviews section ends -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>our blogs</span></h1>
 
-<!-- blogs section starts -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> <span>our blogs</span> </h1>
-
-    <div class="swiper blogs-slider">
-
+      <div class="swiper blogs-slider">
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>blog title goes here</h3>
-                    <p>A watch is more than just a timekeeping device; it's a reflection of your style and the occasion you're attending.
-                        Learn how to match watches with different settings, such as formal events, business meetings, casual outings, 
-                        and outdoor adventures  that can enhance your overall look.</p>
-                        <a href="#" class="btn">read more</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-1.jpg" alt="" />
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>blog title goes here</h3>
-                    <p>Owning a watch goes beyond the initial purchase. Proper care and maintenance are essential to ensure your timepiece lasts
-                         for generations. Get insights into cleaning, servicing, and storing your watch to retain its beauty and functionality over
-                          time.</p>
-                        <a href="#" class="btn">read more</a>
-                </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                A watch is more than just a timekeeping device; it's a
+                reflection of your style and the occasion you're attending.
+                Learn how to match watches with different settings, such as
+                formal events, business meetings, casual outings, and outdoor
+                adventures that can enhance your overall look.
+              </p>
+              <a href="#" class="btn">read more</a>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>blog title goes here</h3>
-                    <p>The materials used in a watch influence its aesthetics, durability, and comfort. From stainless steel to precious metals,
-                         titanium to ceramic,Learn how strap materials like leather, metal, rubber, and fabric contribute to the overall feel of the watch.</p>
-                        <a href="#" class="btn">read more</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-2.jpg" alt="" />
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-4.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>blog title goes here</h3>
-                    <p>A watch is more than just a timekeeping device; it's a reflection of your style and the occasion you're attending.
-                        Learn how to match watches with different settings, such as formal events, business meetings, casual outings, 
-                        and outdoor adventures  that can enhance your overall look.</p>
-                        <a href="#" class="btn">read more</a>
-                </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Owning a watch goes beyond the initial purchase. Proper care and
+                maintenance are essential to ensure your timepiece lasts for
+                generations. Get insights into cleaning, servicing, and storing
+                your watch to retain its beauty and functionality over time.
+              </p>
+              <a href="#" class="btn">read more</a>
             </div>
+          </div>
 
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>blog title goes here</h3>
-                    <p>Your watch should resonate with your personal style. Are you drawn to classic elegance, modern minimalism,
-                        or bold statements? Dive into various watch designs and discover how to align your watch choice with your individual fashion preferences.</p>
-                        <a href="#" class="btn">read more</a>
-                </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-3.jpg" alt="" />
             </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                The materials used in a watch influence its aesthetics,
+                durability, and comfort. From stainless steel to precious
+                metals, titanium to ceramic,Learn how strap materials like
+                leather, metal, rubber, and fabric contribute to the overall
+                feel of the watch.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
 
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                A watch is more than just a timekeeping device; it's a
+                reflection of your style and the occasion you're attending.
+                Learn how to match watches with different settings, such as
+                formal events, business meetings, casual outings, and outdoor
+                adventures that can enhance your overall look.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Your watch should resonate with your personal style. Are you
+                drawn to classic elegance, modern minimalism, or bold
+                statements? Dive into various watch designs and discover how to
+                align your watch choice with your individual fashion
+                preferences.
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- blogs section ends -->
 
-</section>
+    <!-- footer section starts -->
 
-<!-- blogs section ends -->
-
-<!-- footer section starts -->
-
-<section class="footer">
-
-    <div class="box-container">
-
+    <section class="footer">
+      <div class="box-container">
         <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> nepal </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
-        </div>
-
-        
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
-        </div>
-
-         
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> our services </a>
+          <h3>our locations</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> nepal </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
         </div>
 
         <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +977-9819460850 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +91-7275966908 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> baniyarajeev811@gmail.com </a>
-            <img src="image/worldmap.jpg" class="map" alt="">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
         </div>
 
-    </div>
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> our services </a>
+        </div>
 
-    <div class="share">
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +977-9819460850 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91-7275966908 </a>
+          <a href="#">
+            <i class="fas fa-envelope"></i> baniyarajeev811@gmail.com
+          </a>
+          <img src="image/worldmap.jpg" class="map" alt="" />
+        </div>
+      </div>
+
+      <div class="share">
         <a href="#" class="fab fa-facebook"></a>
         <a href="#" class="fab fa-x-twitter"></a>
         <a href="#" class="fab fa-instagram"></a>
         <a href="#" class="fab fa-linkedin"></a>
-    </div>
+      </div>
 
-    <div class="credit"> created by <span>mr.rajeev baniya</span> | all rights reserved! </div>
+      <div class="credit">
+        created by <span>mr.rajeev baniya</span> | all rights reserved!
+      </div>
+    </section>
 
-</section>
+    <!-- footer section ends -->
 
-<!-- footer section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- custom js file link -->
-<script src="script.js"></script>
-    
-</body>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+  </body>
 </html>
