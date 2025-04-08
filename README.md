@@ -1,6 +1,6 @@
 # Watch Mart - E-commerce Watch Store
 
-Watch Mart is a modern e-commerce website specializing in high-quality watches. 
+Watch Mart is a modern e-commerce website . 
 
 ## Features
 
