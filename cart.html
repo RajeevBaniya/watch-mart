@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Watch Mart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- custom css files -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+
+    <!-- Add popup.js before other scripts that might use it -->
+    <script src="./js/popup.js" defer></script>
+  </head>
+  <body>
+    <!-- header section starts -->
+
+    <header class="header">
+      <div class="header-1">
+        <a href="index.html" class="logo"> <i class="fas fa-clock"></i>watch mart</a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart active"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="index.html">home</a>
+          <a href="index.html#featured">featured</a>
+          <a href="index.html#arrivals">arrivals</a>
+          <a href="index.html#reviews">reviews</a>
+          <a href="index.html#blogs">blogs</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+      <a href="index.html" class="fas fa-home"></a>
+      <a href="index.html#featured" class="fas fa-list"></a>
+      <a href="index.html#arrivals" class="fas fa-tags"></a>
+      <a href="index.html#reviews" class="fas fa-comments"></a>
+      <a href="index.html#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login-form -->
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <div class="form-container">
+        <div class="form-tabs">
+          <div class="tab active" data-tab="login">Login</div>
+          <div class="tab" data-tab="signup">Sign Up</div>
+        </div>
+        
+        <div class="form-content">
+          <!-- Login Form -->
+          <form id="login-form" class="active">
+            <h3>Welcome Back</h3>
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" class="box" placeholder="Email address" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="box" placeholder="Password" required />
+            </div>
+            <div class="form-options">
+              <div class="checkbox">
+                <input type="checkbox" id="remember-me" />
+                <label for="remember-me">Remember me</label>
+              </div>
+              <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="social-login">
+              <p>Or login with</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </form>
+          
+          <!-- Signup Form -->
+          <form id="signup-form">
+            <h3>Create Account</h3>
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input type="text" class="box" placeholder="Full name" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" class="box" placeholder="Email address" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="box" placeholder="Password" required />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="box" placeholder="Confirm password" required />
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="terms" />
+              <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart section starts -->
+    <section class="cart-container">
+      <h1 class="heading"><span>Shopping Cart</span></h1>
+
+      <div class="cart-empty-message">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Your cart is empty!</h3>
+        <p>Add items to it now</p>
+        <a href="index.html#featured" class="btn">Shop Now</a>
+      </div>
+
+      <div class="cart-content">
+        <div class="cart-items">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items-container">
+              <!-- Cart items will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-item">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal">Rs 0.00</span>
+          </div>
+          <div class="summary-item">
+            <span>Shipping:</span>
+            <span>Rs 0.00</span>
+          </div>
+          <div class="summary-item total">
+            <span>Total:</span>
+            <span id="cart-total">Rs 0.00</span>
+          </div>
+          <button class="btn checkout-btn">Proceed to Checkout</button>
+          <button class="btn continue-shopping" onclick="window.location.href='index.html'">Continue Shopping</button>
+        </div>
+      </div>
+    </section>
+    <!-- cart section ends -->
+
+    <!-- Hidden templates for JavaScript -->
+    <div id="cart-templates" style="display: none;">
+      <!-- Template for cart confirmation popup -->
+      <template id="cart-confirmation-template">
+        <div class="cart-confirmation-overlay active">
+          <div class="cart-confirmation" style="opacity: 1; transform: translateY(0);">
+            <div class="cart-confirmation-header">
+              <h3>Item Added To Your Cart!</h3>
+            </div>
+            <div class="cart-confirmation-content">
+              <i class="fas fa-check-circle icon"></i>
+              <p>The item has been added to your cart successfully</p>
+              <div class="cart-confirmation-product">
+                <img src="" alt="" class="product-image">
+                <div class="cart-confirmation-product-info">
+                  <h4 class="product-name"></h4>
+                  <div class="price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-confirmation-buttons">
+              <button class="continue">Continue Shopping</button>
+              <button class="view-cart">View Cart</button>
+            </div>
+          </div>
+        </div>
+      </template>
+      
+      <!-- Template for checkout login popup -->
+      <template id="checkout-login-template">
+        <div class="cart-confirmation-overlay active">
+          <div class="cart-confirmation" style="opacity: 1; transform: translateY(0);">
+            <div class="cart-confirmation-header">
+              <h3>Login Required</h3>
+            </div>
+            <div class="cart-confirmation-content">
+              <i class="fas fa-user-circle icon"></i>
+              <p>Please Login Or Create An Account To Complete Your Purchase</p>
+            </div>
+            <div class="cart-confirmation-buttons">
+              <button class="continue">Cancel</button>
+              <button class="login-redirect">Login / Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>our locations</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> nepal </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="index.html#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+          <a href="index.html#arrivals"> <i class="fas fa-arrow-right"></i> arrivals </a>
+          <a href="index.html#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+          <a href="index.html#blogs"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+          <a href="cart.html"> <i class="fas fa-arrow-right"></i> ordered items </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> our services </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +977-9819460850 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91-7275966908 </a>
+          <a href="#">
+            <i class="fas fa-envelope"></i> baniyarajeev811@gmail.com
+          </a>
+          <img src="image/worldmap.jpg" class="map" alt="" />
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-x-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+
+      <div class="credit">
+        created by <span>mr.rajeev baniya</span> | all rights reserved!
+      </div>
+    </section>
+    <!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html> 
